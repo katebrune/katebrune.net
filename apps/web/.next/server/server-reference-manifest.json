@@ -1,0 +1,58 @@
+{
+  "node": {
+    "0080937cb88fa32f1fe462c9c75d8ebe4beca2d17e": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(rsc)/../../node_modules/.pnpm/next@15.5.12_@babel+core@7.29.0_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkatebrune%2Fdev%2Fsrc%2Fgithub%2Fkatebrune%2Fkatebrune.net%2Fapps%2Fweb%2Fsrc%2Fapp%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%220080937cb88fa32f1fe462c9c75d8ebe4beca2d17e%22%2C%22exportedName%22%3A%22default%22%2C%22filename%22%3A%22app%2Fpage.tsx%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "rsc"
+      },
+      "filename": "app/page.tsx",
+      "exportedName": "default"
+    },
+    "00dc2a2d51a430dbf5c6897dcbcb36acea31e4b24f": {
+      "workers": {
+        "app/blog/[id]/page": {
+          "moduleId": "(rsc)/../../node_modules/.pnpm/next@15.5.12_@babel+core@7.29.0_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkatebrune%2Fdev%2Fsrc%2Fgithub%2Fkatebrune%2Fkatebrune.net%2Fapps%2Fweb%2Fsrc%2Fapp%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%2200dc2a2d51a430dbf5c6897dcbcb36acea31e4b24f%22%2C%22exportedName%22%3A%22generateStaticParams%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240a0ad9cc21cf00711de802076e5d3b2603a23a128%22%2C%22exportedName%22%3A%22generateMetadata%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240af849b6c6b03673424b6bafa08de79f90f60806f%22%2C%22exportedName%22%3A%22default%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/blog/[id]/page": "rsc"
+      },
+      "filename": "app/blog/[id]/page.tsx",
+      "exportedName": "generateStaticParams"
+    },
+    "40a0ad9cc21cf00711de802076e5d3b2603a23a128": {
+      "workers": {
+        "app/blog/[id]/page": {
+          "moduleId": "(rsc)/../../node_modules/.pnpm/next@15.5.12_@babel+core@7.29.0_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkatebrune%2Fdev%2Fsrc%2Fgithub%2Fkatebrune%2Fkatebrune.net%2Fapps%2Fweb%2Fsrc%2Fapp%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%2200dc2a2d51a430dbf5c6897dcbcb36acea31e4b24f%22%2C%22exportedName%22%3A%22generateStaticParams%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240a0ad9cc21cf00711de802076e5d3b2603a23a128%22%2C%22exportedName%22%3A%22generateMetadata%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240af849b6c6b03673424b6bafa08de79f90f60806f%22%2C%22exportedName%22%3A%22default%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/blog/[id]/page": "rsc"
+      },
+      "filename": "app/blog/[id]/page.tsx",
+      "exportedName": "generateMetadata"
+    },
+    "40af849b6c6b03673424b6bafa08de79f90f60806f": {
+      "workers": {
+        "app/blog/[id]/page": {
+          "moduleId": "(rsc)/../../node_modules/.pnpm/next@15.5.12_@babel+core@7.29.0_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fkatebrune%2Fdev%2Fsrc%2Fgithub%2Fkatebrune%2Fkatebrune.net%2Fapps%2Fweb%2Fsrc%2Fapp%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%2C%5B%7B%22id%22%3A%2200dc2a2d51a430dbf5c6897dcbcb36acea31e4b24f%22%2C%22exportedName%22%3A%22generateStaticParams%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240a0ad9cc21cf00711de802076e5d3b2603a23a128%22%2C%22exportedName%22%3A%22generateMetadata%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%2C%7B%22id%22%3A%2240af849b6c6b03673424b6bafa08de79f90f60806f%22%2C%22exportedName%22%3A%22default%22%2C%22filename%22%3A%22app%2Fblog%2F%5Bid%5D%2Fpage.tsx%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/blog/[id]/page": "rsc"
+      },
+      "filename": "app/blog/[id]/page.tsx",
+      "exportedName": "default"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "KmQGosz2AKbfK3+JK7RtKkpwvXHEeC5090HQZK91Fu8="
+}

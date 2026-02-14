@@ -1,0 +1,21 @@
+{
+  "version": 4,
+  "routes": { "/blog/lorem-ipsum": {}, "/blog/test-1": {}, "/blog/test-2": {} },
+  "dynamicRoutes": {
+    "/blog/[id]": {
+      "dataRoute": null,
+      "dataRouteRegex": null,
+      "fallback": null,
+      "fallbackRevalidate": false,
+      "fallbackSourceRoute": "/blog/[id]",
+      "routeRegex": "^\\/blog\\/([^/]+?)(?:\\/)?$",
+      "allowHeader": []
+    }
+  },
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "8e45880422ffd4c21e2f6491417574e7",
+    "previewModeSigningKey": "97908459bc7ae002ee49c04dca6460945e747dde56aeadac74ff1048ada2ac19",
+    "previewModeEncryptionKey": "8f43d197fd0ef33db482b4ac6e449c62fbf0f01e9fdebbff83ff210b18aa8c2d"
+  }
+}
