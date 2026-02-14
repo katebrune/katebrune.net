@@ -1,7 +1,11 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 import { ScrollArea } from '@katebrune/ui/scroll-area'
 
-export const Code: FunctionComponent = ({ children }) => {
+interface CodeProperties {
+  children?: ReactNode
+}
+
+export const Code: FunctionComponent<CodeProperties> = ({ children }) => {
   const value = typeof children === 'string' ? children.trim() : ''
 
   return (

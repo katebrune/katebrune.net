@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import React, { FunctionComponent, useState } from 'react'
+import React, { FunctionComponent, ReactNode, useState } from 'react'
 import { cva } from 'class-variance-authority'
 import classNames from 'classnames'
 
@@ -12,7 +12,9 @@ import { Typography } from '@katebrune/ui/typography'
 import { Toggle } from '@katebrune/ui/toggle'
 import { cn } from '@katebrune/ui/utils'
 
-export interface RootLayoutProperties {}
+export interface RootLayoutProperties {
+  children?: ReactNode
+}
 
 export const RootLayout: FunctionComponent<RootLayoutProperties> = (
   properties,
