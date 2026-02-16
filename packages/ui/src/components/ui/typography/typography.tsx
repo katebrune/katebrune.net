@@ -3,14 +3,14 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '../../../lib/utils'
 
 const typographyVariants = cva(
-  'font-sans subpixel-antialiased dark:text-slate-200',
+  'font-sans subpixel-antialiased text-slate-800 dark:text-zinc-200',
   {
     variants: {
       variant: {
         p: 'text-base font-normal',
-        h1: 'text-5xl font-bold',
-        h2: 'text-3xl font-semibold',
-        h3: 'text-xl font-bold',
+        h1: 'text-5xl font-bold tracking-tight',
+        h2: 'text-3xl font-semibold tracking-tight',
+        h3: 'text-xl font-bold tracking-tight',
         code: '!bg-slate-900 font-mono text-base',
       },
     },

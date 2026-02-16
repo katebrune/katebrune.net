@@ -6,7 +6,7 @@ import '@/styles/globals.css'
 import { RootLayout } from '@/app/(components)/root-layout/root-layout'
 
 export const metadata = {
-  title: "kate's blog",
+  title: 'Blog',
 }
 
 export default function Layout({
