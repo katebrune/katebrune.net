@@ -15,7 +15,9 @@ export const Code: FunctionComponent<CodeProperties> = ({
     if (typeof node === 'string') return node
     if (typeof node === 'number') return String(node)
     if (Array.isArray(node)) return node.map(toCodeText).join('')
-    if (React.isValidElement(node)) return toCodeText(node.props.children)
+    if (React.isValidElement<{ children?: ReactNode }>(node)) {
+      return toCodeText(node.props.children)
+    }
     return ''
   }
 
