@@ -1,5 +1,5 @@
 import 'reflect-metadata'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
 import '@/styles/globals.css'
@@ -18,7 +18,9 @@ export default function Layout({
 }) {
   return (
     <>
-      <RootLayout>{children}</RootLayout>
+      <Suspense fallback={null}>
+        <RootLayout>{children}</RootLayout>
+      </Suspense>
       <Analytics />
     </>
   )

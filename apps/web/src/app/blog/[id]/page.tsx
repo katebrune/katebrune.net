@@ -23,7 +23,7 @@ async function getBlogPost({ id }: { id: string }) {
     .toLowerCase()
   const contentWithoutDuplicateTitle = post.content.replace(
     /^\s*#\s+(.+?)\s*\n+/,
-    (match, heading: string) =>
+    (match: string, heading: string) =>
       heading.trim().toLowerCase() === normalizedTitle ? '' : match,
   )
 
