@@ -1,12 +1,12 @@
 import 'reflect-metadata'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
 import '@/styles/globals.css'
 import { RootLayout } from '@/app/(components)/root-layout/root-layout'
 
 export const metadata = {
-  title: "kate's blog",
+  title: 'Blog',
 }
 
 export default function Layout({
@@ -18,7 +18,9 @@ export default function Layout({
 }) {
   return (
     <>
-      <RootLayout>{children}</RootLayout>
+      <Suspense fallback={null}>
+        <RootLayout>{children}</RootLayout>
+      </Suspense>
       <Analytics />
     </>
   )

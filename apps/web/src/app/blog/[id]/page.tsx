@@ -17,12 +17,31 @@ export async function generateStaticParams() {
 async function getBlogPost({ id }: { id: string }) {
   const mdxService = Container.get(MdxService)
   const post = mdxService.getPostData(id)
-  const serialized = await serialize(post.content, {
+
+  const normalizedTitle = String(post.metadata.title ?? '')
+    .trim()
+    .toLowerCase()
+  const contentWithoutDuplicateTitle = post.content.replace(
+    /^\s*#\s+(.+?)\s*\n+/,
+    (match: string, heading: string) =>
+      heading.trim().toLowerCase() === normalizedTitle ? '' : match,
+  )
+
+  const wordCount = contentWithoutDuplicateTitle
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`[^`]+`/g, ' ')
+    .replace(/[^\w\s]/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
+  const readTimeMinutes = Math.max(1, Math.ceil(wordCount / 220))
+
+  const serialized = await serialize(contentWithoutDuplicateTitle, {
     mdxOptions: {},
   })
   return {
     metadata: post.metadata,
     content: serialized,
+    readTimeMinutes,
     id: id,
   }
 }
@@ -31,12 +50,18 @@ export async function generateMetadata({ params }: any) {
   const post = await getBlogPost(params)
 
   return {
-    title: `kate's blog | ${post.metadata.title}`,
+    title: `Blog | ${post.metadata.title}`,
   }
 }
 
 export default async function BlogPostPage({ params }: any) {
   const post = await getBlogPost(params)
 
-  return <BlogPost content={post.content} />
+  return (
+    <BlogPost
+      content={post.content}
+      metadata={post.metadata}
+      readTimeMinutes={post.readTimeMinutes}
+    />
+  )
 }

@@ -14,7 +14,7 @@ const Card = React.forwardRef<
   <div
     ref={reference}
     className={cn(
-      'rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:text-slate-50 shadow-[0_3px_10px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_10px_#0f172a]',
+      'rounded-2xl border border-slate-200/90 bg-white text-slate-900 shadow-[0_6px_24px_rgba(15,23,42,0.08)] transition-colors dark:border-zinc-800/90 dark:bg-zinc-900/70 dark:text-zinc-50 dark:shadow-[0_14px_36px_rgba(0,0,0,0.5)]',
       className,
     )}
     {...properties}
@@ -29,7 +29,7 @@ const CardHeader = React.forwardRef<
 >(({ className, ...properties }, reference) => (
   <div
     ref={reference}
-    className={cn('flex flex-col space-y-1.5 p-6', className)}
+    className={cn('flex flex-col space-y-2 p-6', className)}
     {...properties}
   />
 ))
@@ -44,7 +44,7 @@ const CardTitle = React.forwardRef<
   <h3
     ref={reference}
     className={cn(
-      'text-2xl font-semibold leading-none tracking-tight',
+      'text-2xl font-semibold leading-tight tracking-tight',
       className,
     )}
     {...properties}
@@ -59,7 +59,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...properties }, reference) => (
   <p
     ref={reference}
-    className={cn('text-sm text-slate-500 dark:text-slate-400', className)}
+    className={cn('text-base text-slate-600 dark:text-zinc-400', className)}
     {...properties}
   />
 ))
