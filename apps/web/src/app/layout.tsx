@@ -7,6 +7,10 @@ import { RootLayout } from '@/app/(components)/root-layout/root-layout'
 
 export const metadata = {
   title: 'Blog',
+  icons: {
+    icon: [{ url: '/favicon.svg?v=2', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg?v=2',
+  },
 }
 
 export default function Layout({
