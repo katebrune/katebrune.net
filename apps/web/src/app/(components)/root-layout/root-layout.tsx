@@ -103,10 +103,6 @@ export const RootLayout: FunctionComponent<RootLayoutProperties> = (
 
   return (
     <html lang="en" className={useDarkMode ? 'dark' : ''}>
-      <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="alternate icon" href="/favicon.ico" />
-      </head>
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
         <div className="h-full w-auto px-4 pt-0 sm:px-5">
           <nav className="sticky top-0 z-10 flex h-20 items-center justify-between border-b border-slate-200/80 bg-slate-50/85 backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-950/80 lg:px-2">
